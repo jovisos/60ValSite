@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite 60 Anos Valmir</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0; /* Um fundo claro para o convite */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .invitation-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* Bordas mais arredondadas */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            max-width: 600px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-image {
+            width: 100%;
+            height: 200px; /* Altura fixa para o cabeçalho */
+            object-fit: cover; /* Garante que a imagem cubra a área */
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-top: -70px; /* Ajustado para centralizar mais a imagem */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            object-position: 10% center; /* Move a imagem um pouco mais para a esquerda dentro do círculo */
+        }
+        .logo-image {
+            width: 150px; /* Largura do logo */
+            height: auto;
+            margin: 20px auto 0; /* Margem superior e centralizar */
+            display: block; /* Garante que o margin auto funcione */
+        }
+        .program-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .program-time {
+            font-weight: 600;
+            color: #4a5568; /* Cor para o horário */
+            min-width: 60px; /* Garante alinhamento */
+        }
+        .program-description {
+            margin-left: 1rem;
+            color: #2d3748; /* Cor para a descrição */
+        }
+        .google-form-embed {
+            width: 100%;
+            /* A altura do iframe será definida pelo atributo 'height' no HTML,
+               mas garantimos que ele se ajuste à largura do contêiner.
+               Para melhor responsividade, o ideal é que o próprio Google Form
+               seja otimizado para mobile. Se o formulário for muito longo,
+               a rolagem dentro do iframe será necessária. */
+            min-height: 400px; /* Altura mínima para evitar que seja muito pequeno */
+            border: none; /* Remove a borda padrão do iframe */
+            border-radius: 0.75rem; /* Arredonda as bordas do iframe */
+        }
+        .audio-player-container {
+            margin-top: 2rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #e2e8f0; /* Fundo para o player de áudio */
+            border-radius: 0.75rem;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .audio-player-container audio {
+            width: 100%; /* Garante que o player ocupe a largura total do contêiner */
+            max-width: 300px; /* Limita a largura máxima do player */
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <!-- Imagem de cabeçalho (paisagem) - Referenciando arquivo local -->
+        <img src="images/Whats-App-Image-2025-08-06-at-07-18-14-Copia.jpg"
+             onerror="this.src='https://placehold.co/600x200/A0C49D/FFFFFF?text=Valmir+60+Anos';"
+             alt="Imagem de fundo do convite, com um lago e palmeiras"
+             class="header-image">
+
+        <div class="flex justify-center -mt-16 z-10">
+            <!-- Imagem do Valmir - Referenciando arquivo local -->
+            <img src="images/Whats-App-Image-2025-08-06-at-07-13-24.jpg"
+                 onerror="this.src='https://placehold.co/120x120/FFD700/000000?text=Valmir';"
+                 alt="Foto do Valmir"
+                 class="profile-image">
+        </div>
+
+        <div class="p-8 text-center">
+            <!-- Logotipo do evento - Referenciando arquivo local -->
+            <img src="images/Design-sem-nome.png"
+                 onerror="this.src='https://placehold.co/150x100/CCCCCC/333333?text=Logo';"
+                 alt="Logotipo do evento 60 Anos Valmir"
+                 class="logo-image mb-4">
+
+            <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Valmir 60 Anos!</h1>
+            <p class="text-xl text-gray-700 mb-6">Você é nosso convidado especial para celebrar esta data tão importante!</p>
+
+            <!-- Player de Áudio - Agora usando a tag <audio> com arquivo local -->
+            <div class="audio-player-container">
+                <p class="text-gray-700 text-lg mb-2">Ouça uma mensagem especial!</p>
+                <audio controls loop muted>
+                    <source src="audio/VINHETA%20PARAB%C3%89NS%20PRA%20VOC%C3%8A%20na%20Viola%20Caipira.mp3" type="audio/mpeg">
+                    O seu navegador não suporta o elemento de áudio.
+                </audio>
+                <p class="text-sm text-gray-600 mt-2">
+                    (Música inicia mutada. Clique no ícone de volume para ouvir.)
+                </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl mb-6 shadow-inner mt-8">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">Detalhes do Evento:</h2>
+                <p class="text-lg text-gray-600 mb-2">
+                    <span class="font-semibold">Data:</span> 06 de Setembro de 2025
+                </p>
+                <p class="text-lg text-gray-600 mb-2">
+                    <span class="font-semibold">Início:</span> 12h00
+                </p>
+                <!-- Localização adicionada -->
+                <p class="text-lg text-gray-600 mb-2">
+                    <span class="font-semibold">Local:</span> Cantinho da Natureza
+                </p>
+                <p class="text-md text-gray-600">
+                    Entrada Vía Anhanguera, Km 138, Americana Sentido Limeira, Limeira, Brazil 13477-350
+                </p>
+                <p class="text-lg text-gray-600 mt-2">
+                    <a href="https://maps.app.goo.gl/zoZT3RaFhXsuDjHf7" target="_blank" class="text-blue-600 hover:underline font-semibold">Ver no Mapa</a>
+                </p>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-xl shadow-inner">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">Programação Especial:</h2>
+                <div class="text-left">
+                    <div class="program-item">
+                        <span class="program-time">12h00:</span>
+                        <span class="program-description">Roda de Violeiros: Jorge e Jefferson</span>
+                    </div>
+                    <div class="program-item">
+                        <span class="program-time">14h00:</span>
+                        <span class="program-description">Dupla Sertaneja: Zé Neto e Vinícius</span>
+                    </div>
+                    <div class="program-item">
+                        <span class="program-time">16h00:</span>
+                        <span class="program-description">Show Surpresa!</span>
+                    </div>
+                    <div class="program-item">
+                        <span class="program-time">17h00:</span>
+                        <span class="program-description">DJ Marcelo Massari</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-lg text-gray-700 mt-8">Contamos com a sua presença para tornar este dia inesquecível!</p>
+            <p class="text-md text-gray-500 mt-4">
+                #Valmir60Anos
+            </p>
+
+            <!-- Formulário de Confirmação de Presença (RSVP) com Google Forms -->
+            <div class="bg-green-50 p-6 rounded-xl shadow-inner mt-8">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">Confirme sua Presença!</h2>
+                <!-- O src do iframe foi atualizado com o link fornecido pelo usuário -->
+                <iframe class="google-form-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSfixoB_47l5szw7sm0hcpCWB7E1UMVxZbadq6mm8ltls-TDSA/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                <p class="text-sm text-gray-600 mt-4">
+                    Por favor, preencha o formulário acima para confirmar sua presença.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Não há necessidade de JavaScript para as imagens, apenas substitua os 'src' no HTML.
+    </script>
+</body>
+</html>
